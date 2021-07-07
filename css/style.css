@@ -8,6 +8,20 @@ a,p,h1,h2,h3,h4 {
 body{
     margin: 0;
     font-family: 'Epilogue', sans-serif;
+    background-color: black;
+}
+
+body:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.06;
+    background-image: url("/img/statics.gif");
 }
 
 .wraps{
@@ -23,7 +37,7 @@ a {
 /* Header  */
 
 .col-100 {
-    background: #e2e2e2;
+    background: #e2e2e207;
     display: flex;
     justify-content: space-between;
 }
@@ -48,7 +62,7 @@ a {
 ul.list-menu li a{
     position: relative;
     font-weight:bold;
-    color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
     margin: 0px 15px;
 }
 ul.list-menu li a:after{
