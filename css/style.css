@@ -1,13 +1,35 @@
 /* All */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --main-color: #5f4896;
+    --second-color: #47aedb;
+    --degrade-color: linear-gradient(270deg,#5f4896 0%, #47aedb 80%);
+    --font-mont: 'Montserrat', sans-serif;
+    --font-popp: 'Poppins', sans-serif;
+    --back-negro-claro: #080808;
+}
 
 a,p,h1,h2,h3,h4 {
-    padding: 15px;
+    padding: 10px;
+    color: white;
+    margin: 2% 0;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Poppins', sans-serif!important;
 }
 
 body{
     margin: 0;
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
 }
 
@@ -20,7 +42,7 @@ body:before{
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.06;
+    opacity: 0.04;
     background-image: url("/img/statics.gif");
 }
 
@@ -29,7 +51,37 @@ body:before{
 }
 
 a {
-    color: rgb(57, 0, 212);
+    color: var(--main-color);
+}
+
+h2.tits {
+    margin: 2% 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.butt-main  {
+    padding: 12px 35px;
+    margin: 15px;
+    font-size: 16px;
+    color: var(--second-color);
+    font-weight: 700;
+    background: none;
+    border-radius: 20px;
+    border:2px solid var(--second-color);
+    font-family: var(--font-mont);
+    
+}
+
+.tits {
+    font-size: 2.8em;
+}
+
+.col-3 {
+    width: 27%;
+    padding: 3% 2%;
 }
 
 
@@ -64,20 +116,104 @@ ul.list-menu li a{
     font-weight:bold;
     color: rgb(255, 255, 255);
     margin: 0px 15px;
+    font-size: 14px;
 }
 ul.list-menu li a:after{
     position: absolute;
-    bottom: 7px;
-    left: 0px;
-    width: 100%;
-    height: 4px;
+    bottom: 15px;
+    left: 5px;
+    width: 90%;
+    height: 3px;
     background-color: #362aa0;
     content: "";
     opacity: 0;
     transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
-    transform: translateY(20px);        
+    margin: auto;      
 }
 ul.list-menu li a:hover:after{
     opacity:1;
     transform: translateY(15px)
+}
+
+/* ----- SLIDER ----- */
+
+#sliderID {
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    margin: 4% auto;
+}
+
+.texto-slider {
+    width: 40vw;
+}
+
+h2.mayus-text {
+    font-size: 3.2em;
+    margin: 2%;
+}
+
+h2.mayus-textB {
+    font-size: 3.2em;
+    margin: 2%;
+    font-weight: 600;
+}
+
+span.text-degradado {
+    background: linear-gradient(270deg,#5f4896 0%, #47aedb 80%);
+    background: -webkit-linear-gradient(270deg,#5f4896 0%, #47aedb 80%);
+    background: -moz-linear-gradient(270deg,#5f4896 0%, #47aedb 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* ----- LOGO EDUCACION ----- */
+
+.logos-edu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 72vw;
+    margin: auto;
+}
+
+#logos-eduID {
+    padding: 1%;
+    background: var(--back-negro-claro);
+}
+
+/* ----- SOBRE MI ----- */
+
+.text-about {
+    width: 40%;
+    padding: 2.5%;
+}
+
+.aboutCl {
+    padding: 4% 2%;
+    justify-content: center;
+    background: black;
+}
+
+.img-about {
+    padding: 5px;
+    margin: 15px;
+}
+
+/* ----- SOLUCIONES ----- */
+
+#soluciones {
+    padding: 3% 2%;
+    background: var(--back-negro-claro);
+}
+
+.text-solu {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.col-soluciones {
+    justify-content: center;
 }
