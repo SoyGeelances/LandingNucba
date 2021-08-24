@@ -1,3 +1,1 @@
-# LandingNucba
-
-# Esto son ejercicios de la academia Nucba
+# Desarrollo de mi página web.
