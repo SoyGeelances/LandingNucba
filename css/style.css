@@ -528,3 +528,9 @@ textarea.inputClassBm {
 .col-foot2 {
     width: 35%;
 }
+
+.fab, .far {
+    color: white;
+    padding: 5%;
+    font-size: 20px;
+}
