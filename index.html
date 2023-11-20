@@ -7,61 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geelances - Web designer and Developer</title>
 
+    <!-- STYLES ----------------------------------------------------------------------------->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTS ----------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- ICONS ----------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... (hash)" crossorigin="anonymous" />
 
 </head>
 
 <body>
 
     <!--    HEADER    -->
-    <div class="col-100 wraps">
-        <div class="logo col-50 wraps">
-            <img src="img/logo-oficial.png" width="200px" alt="logo-tec">
+    <header class="header col-100 wraps container">
+        <div class="logo wraps">
+            <figure>
+                <img src="img/logo-oficial.png" width="200px" alt="logo-tec">
+            </figure>
         </div>
 
-        <nav class="main-menu col-50 wraps">
+        
+        <nav id="main-menu" class="main-menu wraps menu-toggle" >
+            <i class="fas fa-bars"></i>
             <ul class="list-menu">
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Servicios</a>
+                    <a href="/#about">Sobre mi</a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="/#soluciones">Servicios</a>
                 </li>
                 <li>
-                    <a href="#">Sobre mi</a>
+                    <a href="/#proyectos">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#">Contactame</a>
+                    <a href="/#hablemos">Contactame</a>
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
 
 
 
     <!--    SLIDER    -->
 
-    <section id="sliderID" class="flex-container">
-        <div class="texto-slider">
+    <section id="sliderID" class="container flex-container">
+        <div class="texto-slider col-50">
             <h2 class="mayus-text">Hola, Soy <span class="text-degradado">Genesis</span></h2>
-            <h2 class="mayus-textB">Ux Designer <br>Web Developer</h2>
+            <h2 class="mayus-textB"><br>Ux Designer <br>Web Developer</h2>
             <!-- <input type="button" value="Descargar CV" id="butt-sliderID" class="butt-main"> -->
-            <img src="img/firma.png" alt="firma-genesis-sanchez" style="width: 35%; margin-left: 15px;">
+            <figure class="firma-wrapper">
+                <img src="img/firma.png" alt="firma-genesis-sanchez" class="firma-img">
+            </figure>
         </div>
-        <div id="laptopID">
-            <img src="img/laptop.png" alt="imagen-laptop">
+        <div id="laptopID" class="col-50">
+            <figure class="laptop-wrapper">
+                <img src="img/laptop.png" alt="imagen-laptop" style="max-width: 620px;">
+            </figure>
         </div>
     </section>
 
@@ -69,16 +80,16 @@
 
     <!--    LOGOS EDUCACION    -->
 
-    <section id="logos-eduID">
+    <section id="logos-eduID" class="container">
         <div class="logos-edu">
             <div class="log-nucba col-3">
-                <img src="img/logo-nucba.png" alt="logo-nucba" style="width: 70%;">
+                <img src="img/logo-nucba.png" alt="logo-nucba" >
             </div>
             <div class="log-edu-it col-3 ">
-                <img src="img/logo-education-it.png" alt="education-it" style="width: 70%;">
+                <img src="img/logo-education-it.png" alt="education-it" >
             </div>
             <div class="log-universidad-sm col-3">
-                <img src="img/logo-universidad-santa-maria.png" alt="logo-universidad-santa-maria" style="width: 70%;">
+                <img src="img/logo-universidad-santa-maria.png" alt="logo-universidad-santa-maria" >
             </div>
         </div>
     </section>
@@ -87,7 +98,7 @@
 
     <!--    SOBRE MI    -->
 
-    <section id="about" class="aboutCl flex-container">
+    <section id="about" class="container aboutCl flex-container">
         <div class="img-about">
             <img src="img/Genesis-sanchez.jpg" alt="imagen-genesis">
         </div>
@@ -141,8 +152,8 @@
 
     <!--    SOLUCIONES    -->
 
-    <section id="soluciones">
-        <div class="text-solu">
+    <section id="soluciones" class="container">
+        <div class="text-title">
             <h2 class="tits">Puedo ayudarte con:</h2>
             <p>Trabajar juntos nos me permite descubrir los principios más adecuados para cada proyecto.</p>
         </div>
@@ -172,8 +183,8 @@
 
     <!--    HERRAMIENTAS    -->
 
-    <section id="Herramientas">
-        <div class="text-solu">
+    <section id="Herramientas" class="container">
+        <div class="text-title">
             <h2 class="tits">Herramientas</h2>
             <p>Estas son algunas de las herramientas que más uso a la hora de realizar los proyectos.</p>
         </div>
@@ -205,8 +216,8 @@
 
     <!--    PROYECTOS RECIENTES    -->
 
-    <section id="proyectos">
-        <div class="text-solu">
+    <section id="proyectos" class="container">
+        <div class="text-title">
             <h2 class="tits">Proyectos Recientes</h2>
             <p>Algunos de los proyectos mas recientes.</p>
         </div>
@@ -251,14 +262,14 @@
 
     <!--    HABLEMOS    -->
 
-    <section id="hablemos">
-        <div class="text-solu">
-            <h2 class="tits">Hablémos</h2>
-            <p>Cuéntame de tu proyecto y hagámoslo realidad. Conéctese conmigo por correo electrónico:
-                geelances@gmail.com</p>
+    <section id="hablemos" class="container"> 
+        <div class="text-title">
+            <h4>Cuéntame de tu proyecto y hagámoslo realidad. 
+                <br>Conéctese conmigo por correo electrónico:
+                <br>geelances@gmail.com</h4>
         </div>
-        <div class="flex-container form">
-            <form name="form-cont">
+        <!--<div class="flex-container form">
+            <form method="post" action="" name="form-cont">
                 <label name="nombre"><input type="text" placeholder="Nombre" class="inputClass"></label>
                 <label name="email"><input type="email" placeholder="Correo electrónico" class="inputClass"></label>
                 <label name="asunto"><input type="text" placeholder="Cuéntame en que puedo ayudarte"
@@ -267,11 +278,11 @@
                     placeholder="Escribe tu mensaje..."></textarea>
                 <input type="submit" value="Enviar mensaje" class="inputbutt">
             </form>
-        </div>
+        </div>-->
     </section>
 
     <footer id="footerID">
-        <div class="footer">
+        <div class="footer container">
             <div class="col-foot">
                 <p>Email: geelances@gmail.com | Buenos Aires Argentina</p>
             </div>
@@ -287,6 +298,7 @@
         </div>
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
